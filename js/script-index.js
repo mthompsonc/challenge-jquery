@@ -1,7 +1,10 @@
 $(document).ready( function(){
-	//Eliminando botón back
-	$('.js-back').hide();
-	
+	//Eliminando botón back (Etapa1)
+	$('.js-back').remove();
+
+
+	// Función agregar título Nuevas Recetas (Etapa 2).
+	printNews();
 
 
 	//La variable "recipesArray" esta declarada en el archivo "data/recipes.js"
@@ -9,6 +12,11 @@ $(document).ready( function(){
 
 });
 
+
+//Función para escribir Nuevas Recetas (Etapa 2)
+function printNews(){
+	$('#titlenews').append("Nuevas Recetas");
+}
 
 /*
 * Función que se encarga de pintar TODAS las recetas que tengan
