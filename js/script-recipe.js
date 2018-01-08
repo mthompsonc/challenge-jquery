@@ -4,7 +4,6 @@ $(document).ready(function() {
   //Etapa 7
   console.log('Holi, está listo el documento.');
 
-
   $(".js-show-recipe").click(function() {
     $("#pageRecipe").removeClass("make");
     $(this).addClass('active');
@@ -16,6 +15,10 @@ $(document).ready(function() {
     $(this).addClass('active');
     $(".js-show-recipe").removeClass('active');
   });
+
+  $('.js-back').click(function(){
+    window.location.href="index.html"
+  })
 
 
 });

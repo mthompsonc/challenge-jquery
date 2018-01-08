@@ -12,6 +12,9 @@ $(document).ready( function(){
 
 	renderActivities(activitiesArray);
 
+	$('#exploreRecipes').click(function(){
+		window.location.href="recipe.html"
+	})
 });
 
 
