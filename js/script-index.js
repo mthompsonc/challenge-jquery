@@ -65,22 +65,11 @@ function renderActivities(activitiesArray) {
     }
         if(activitiesArray.length > 0){
             $(".wrapper-message").hide();
-						console.log('holi9')
+						console.log('holi9');
         }
     }
 
-/*
-function renderActivities(activitiesArray) {
-	console.log('Activities: ', activitiesArray);
-	for (var i = 0; i < activitiesArray.length; i++){
-	}
-	//Condición si la longitud del array es diferente a 0
-	if (activitiesArray.length > 0){
-		//Pasándole los datos que cumplieron el if.
-		console.log('holi9');
-		$('.​wrapper-message​').hide();
-	}
-}*/
+
 
 /*
 * Función que se encarga de pintar una actividad
@@ -89,4 +78,5 @@ function renderActivities(activitiesArray) {
 */
 function renderActivity(recipe) {
 
+		$(".list-activities").append('<a href="#" class="item-activity"><span class="attribution"> <span class="avatar"><img src="' + recipe.userAvatar + '" class="image-avatar"></span> <span class="meta"><span class="author">' + recipe.userName + '</span> made <span class="recipe">' + recipe.recipeName + '</span>:' + recipe.text + '<span class="location"> &mdash;' +  recipe.place + '</span> </span> </span> <div class="bg-image" style="background-image: url(' + recipe.image + ');"></div></a>');
 }
