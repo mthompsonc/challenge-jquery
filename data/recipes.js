@@ -1,6 +1,6 @@
 
 var recipesArray = [
-  
+
   {
     "title": "Fromage Fort",
     "highlighted": true,
@@ -796,5 +796,5 @@ var recipesArray = [
     ],
     "name": "winter-cashew-gateau"
   }
-  
+
 ];
